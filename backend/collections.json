@@ -1,0 +1,396 @@
+{
+	"info": {
+		"_postman_id": "6adb220b-8998-4aeb-80a4-afb2381da6c6",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19274814"
+	},
+	"item": [
+		{
+			"name": "categories/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTUwY2YwYTVjYzZlMTA3MGM4NzAyYzciLCJpYXQiOjE3MDEyMDI0ODQsImV4cCI6MTcwMTIxMzI4NH0.4tCClJV-JokFNxHFVq-e8gzfZgnyBD4Sv_UJIAYsS8E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Stand Up\",\r\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt varius ex ut varius. Praesent consequat gravida sem in porttitor. Sed facilisis ullamcorper nunc faucibus pulvinar. Fusce id nulla ultrices, eleifend libero eu, ultrices nulla. Nam ornare bibendum condimentum. Sed blandit pretium auctor. Nulla sollicitudin pulvinar ultricies. Phasellus risus ante.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/categories/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"categories",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZGlzcGxheU5hbWUiOiJUZXN0IFVzZXIgMSIsImVtYWlsIjoidGVzdDFAYmlsZXQuY29tIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE2OTk3Mzk5OTIsImV4cCI6MTY5OTc0MzU5Mn0.fsBU331XywseqwaVuORpJ64JkDuchmtvlR5y81ZdXEk",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZGlzcGxheU5hbWUiOiJUZXN0IFVzZXIgMSIsImVtYWlsIjoidGVzdDFAYmlsZXQuY29tIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE2OTk3Mzk5OTIsImV4cCI6MTY5OTc0MzU5Mn0.fsBU331XywseqwaVuORpJ64JkDuchmtvlR5y81ZdXEk",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/categories?id=654ffb040580622dbf5e8cc7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "654ffb040580622dbf5e8cc7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "locations/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTUwY2YwYTVjYzZlMTA3MGM4NzAyYzciLCJpYXQiOjE3MDEyMDI0ODQsImV4cCI6MTcwMTIxMzI4NH0.4tCClJV-JokFNxHFVq-e8gzfZgnyBD4Sv_UJIAYsS8E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ankara Yeni Sahne\",\r\n    \"address\": \"Kızılay, Menekşe-1 Sk. 8/A, 06420 Çankaya/Ankara\",\r\n    \"coordinates\": {\r\n        \"type\": \"Point\",\r\n        \"coordinates\": [39.92343074, 32.8523618]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/locations/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"locations",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "locations",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZGlzcGxheU5hbWUiOiJUZXN0IFVzZXIgMSIsImVtYWlsIjoidGVzdDFAYmlsZXQuY29tIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE2OTk3ODgwNDUsImV4cCI6MTY5OTc5MTY0NX0.af_pqDOhuas3DoXPBZYdVeg3ACSEPvD-HnRDUX5u7GA",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/locations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "location",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZGlzcGxheU5hbWUiOiJUZXN0IFVzZXIgMSIsImVtYWlsIjoidGVzdDFAYmlsZXQuY29tIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE2OTk3ODgwNDUsImV4cCI6MTY5OTc5MTY0NX0.af_pqDOhuas3DoXPBZYdVeg3ACSEPvD-HnRDUX5u7GA",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/locations?id=6550b68baf8a8373039d368e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"locations"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6550b68baf8a8373039d368e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "events/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTUwY2YwYTVjYzZlMTA3MGM4NzAyYzciLCJpYXQiOjE3MDEyMDI0ODQsImV4cCI6MTcwMTIxMzI4NH0.4tCClJV-JokFNxHFVq-e8gzfZgnyBD4Sv_UJIAYsS8E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Seda Yüz - Stand Up\",\r\n  \"description\": \"Seda Yüz, dertlere derman yaralara merhem olan tek kişilik stand-up gösterisiyle seyircisiyle buluşuyor.\",\r\n  \"category\": \"65664d7db196086e1c7527f9\",\r\n  \"images\": [\r\n    { \"url\": \"https://cdn.bubilet.com.tr/files/Etkinlik/seda-yuz-stand-up-80274.png\" }\r\n  ],\r\n  \"date\": \"2023-12-15T17:00:00.000Z\",\r\n  \"cityId\": 41,\r\n  \"location\": \"65664cd5b196086e1c7527f3\",\r\n  \"seatingCategories\": [\r\n    { \"name\": \"Normal\", \"price\": 100.0 }\r\n  ],\r\n  \"isPopular\": true,\r\n  \"socialMediaLinks\": [\r\n    { \"name\": \"instagram\", \"url\": \"\" }\r\n  ],\r\n  \"organizer\": [\"Seda Yüz\"],\r\n  \"isPickable\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/events/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"events",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "events",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZGlzcGxheU5hbWUiOiJUZXN0IFVzZXIgMSIsImVtYWlsIjoidGVzdDFAYmlsZXQuY29tIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE2OTk3OTIwODAsImV4cCI6MTY5OTc5NTY4MH0.hBPq1uDeenV2zAWw1tFhmrDK9LxaIbxquXc8bIfhR0k",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "events/filter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startDate\": \"2023-11-20\",\n    \"endDate\": \"2023-12-29\",\n    \"category\": \"\",\n    \"city\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/events/filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"events",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "event",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZGlzcGxheU5hbWUiOiJUZXN0IFVzZXIgMSIsImVtYWlsIjoidGVzdDFAYmlsZXQuY29tIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE2OTk3OTIwODAsImV4cCI6MTY5OTc5NTY4MH0.hBPq1uDeenV2zAWw1tFhmrDK9LxaIbxquXc8bIfhR0k",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/events/6566563cb196086e1c75285b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"events",
+						"6566563cb196086e1c75285b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZGlzcGxheU5hbWUiOiJUZXN0IFVzZXIgMSIsImVtYWlsIjoidGVzdDFAYmlsZXQuY29tIiwicGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE2OTk3OTIwODAsImV4cCI6MTY5OTc5NTY4MH0.hBPq1uDeenV2zAWw1tFhmrDK9LxaIbxquXc8bIfhR0k",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"elifhelin\",\r\n    \"email\": \"elifhelincarboga@bilet.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"elifhelin\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

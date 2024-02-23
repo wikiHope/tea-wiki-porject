@@ -1,0 +1,58 @@
+# Node.js
+node_modules/
+npm-debug.log
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# yarn
+yarn-error.log
+
+# dotenv environment variables file
+.env
+
+# Visual Studio Code directory
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Dependency directories
+.jenkins/
+.idea/
+
+# Compiled binary addons (Node-gyp)
+build/
+
+# TypeScript
+*.tsbuildinfo
+
+# Flow
+.flowconfig
+
+# Yarn 2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Prettier
+node_modules/
+.prettier*

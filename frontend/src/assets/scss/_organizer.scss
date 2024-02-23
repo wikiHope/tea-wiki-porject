@@ -1,0 +1,25 @@
+@use "variables";
+
+.organizer {
+  margin-left: 64px;
+  & > div {
+    display: flex;
+    align-items: center;
+    grid-gap: 0 20px;
+    gap: 0 20px;
+    position: relative;
+    .organizer__image {
+      width: 110px;
+      height: 110px;
+      flex-shrink: 0;
+      transition: .3s transform;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        border: 1px solid variables.$primary-border-color;;
+      }
+    }
+  }
+}

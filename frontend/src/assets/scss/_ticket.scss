@@ -1,0 +1,88 @@
+@use "variables";
+
+.ticket {
+  font-size: 16px;
+  .ticket__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    svg {
+      cursor: pointer;
+      color: variables.$primary-color;
+      width: 24px;
+      height: 24px;
+      &:hover {
+        color: rgb(153, 2, 72);
+      }
+    }
+  }
+  .ticket__card {
+    border: 1px solid variables.$primary-border-color;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+
+      border-color: variables.$primary-color;
+      background: lighten(variables.$primary-color, 40%);;
+    }
+    .ticket__left {
+      flex-direction: column;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      padding: 10px 20px;
+      grid-gap: 6px 0;
+      gap: 6px 0;
+    }
+    
+    .ticket__right {
+      padding-right: 15px;
+      padding-top: 10px;
+      .price {
+        font-size: 26px;
+        font-weight: variables.$bold;
+        color: #4b4b4b;
+      }
+      small {
+        font-size: 16px;
+      }
+    }
+    
+    .ticket__bottom {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      white-space: nowrap;
+      width: 100%;
+      height: 100%;
+      grid-gap: 0 15px;
+      gap: 0 15px;
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0 16px;
+        border-radius: 21px 0 18px;
+        background: variables.$primary-color;
+        color: variables.$white;
+        grid-gap: 0 7px;
+        gap: 0 7px;
+        height: 34px;
+      }
+    }
+  }
+
+  .ticket--type {
+    color: variables.$primary-color;
+  }
+
+  .ticket--date {
+    font-weight: variables.$bold;
+    font-size: 18px;
+  }
+}

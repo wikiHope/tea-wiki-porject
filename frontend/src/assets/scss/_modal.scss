@@ -1,0 +1,60 @@
+/* SocialMediaModal.css */
+@use "variables";
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  .modal-content {
+    color: rgb(153, 2, 72);
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+  }
+  
+  .close {
+    color: rgb(153, 2, 72);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: variables.$primary-color;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: rgb(153, 2, 72);
+  }
+  
+  &.show {
+    display: block;
+  }
+  
+}
+

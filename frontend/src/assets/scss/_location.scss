@@ -1,0 +1,7 @@
+@use "variables";
+
+.location {
+  .other-events {
+    color: variables.$primary-color;
+  }
+}
